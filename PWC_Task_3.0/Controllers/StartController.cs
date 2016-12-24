@@ -21,13 +21,19 @@ namespace PWC_Task_3._0.Controllers
             return View();
         }
 
-        public ViewResult  Test()
+        // [HttpPost]
+        public ActionResult Import()
         {
-            return View();
+            return View("~/Views/Chart/Index.cshtml");
         }
 
+        //public ViewResult  Test()
+        //{
+        //    return View();
+        //}
 
 
-       
+
+
     }
 }

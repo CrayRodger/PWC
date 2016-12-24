@@ -8,11 +8,16 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Import</title>
 </head>
 <body>
-    <div> 
+    @*<div>
         Hello
-    </div>
+    </div>*@
+        @using (Html.BeginForm(FormMethod.Post))
+        {
+            <input type=" =submit" value="Import" formaction="@Url.Action("Chart", "Index")" />
+        }
+   
 </body>
 </html>
